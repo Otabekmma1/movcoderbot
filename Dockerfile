@@ -14,7 +14,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Portni ochish
-EXPOSE 8443  # Telegram botlar odatda 8443-portda ishlaydi
+EXPOSE 8443 
 
 # Dastur ishga tushirish
 CMD ["python", "bot.py"]  # 'bot.py' faylini ishga tushiring
