@@ -7,7 +7,6 @@ from aiogram import Bot, Dispatcher
 from aiogram.filters import CommandStart
 from aiogram.types import  Message, InlineKeyboardMarkup, InlineKeyboardButton, \
     CallbackQuery, ReplyKeyboardMarkup, KeyboardButton
-from middleware import ThrottlingMiddleware
 
 
 TOKEN = "7511166749:AAEeEAYIraX-VHhWZa1EYxuPqXeJ195IZO0"
@@ -15,7 +14,6 @@ ADMINS = [5541564692]
 storage = MemoryStorage()
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
-dp.message.middleware(ThrottlingMiddleware(limit=5, cooldown=10))
 
 logging.basicConfig(level=logging.INFO, handlers=[
     logging.StreamHandler(sys.stdout),
