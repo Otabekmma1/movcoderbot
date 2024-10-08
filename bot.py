@@ -9,7 +9,7 @@ from aiogram.types import  Message, InlineKeyboardMarkup, InlineKeyboardButton, 
     CallbackQuery, ReplyKeyboardMarkup, KeyboardButton
 
 
-TOKEN = "7511166749:AAEeEAYIraX-VHhWZa1EYxuPqXeJ195IZO0"
+TOKEN = "7511166749:AAHVFD5SI4ncu98QbiT8D8TMHfMc7oLANOE"
 ADMINS = [5541564692]
 storage = MemoryStorage()
 bot = Bot(token=TOKEN)
